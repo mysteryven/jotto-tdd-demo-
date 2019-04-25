@@ -46,10 +46,9 @@ describe('If there are words guessed', () => {
   it('renders "guess words" section', () => {
     const guessWords = findByTestAttr(wrapper, 'guessed-words');
     expect(guessWords.length).toBe(1);
-  })
+  });
   it('correct number of guessed words', () => {
     const guessedWordItems = findByTestAttr(wrapper, 'guessed-word-item');
     expect(guessedWordItems.length).toBe(guessedWords.length);
-  })
-
+  });
 });
